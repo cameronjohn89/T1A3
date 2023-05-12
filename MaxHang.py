@@ -15,6 +15,21 @@ def get_user_data():
             print("This is an invalid input. Please try again.")
 
 
+def display_user_scores(users, first_name, last_name):
+    user = get_user_by_name(users, first_name, last_name)
+    if user is None:
+        print("Could not find user. Please check your input and try again.")
+        return
+    elif 'scores' not in user:
+        print("No scores found for this user.")
+        return
+    else:
+        print(f"Here are your previous scores, {first_name}:")
+        for idx, score in enumerate(user['scores']):
+            print(
+                f"{idx+1}. Date: {score['date']}, Finger Strength: {score['finger_strength']}%")
+
+
 def get_user_by_name(users, first_name, last_name):
     for user in users:
         if user['first_name'] == first_name and user['last_name'] == last_name:
@@ -70,13 +85,21 @@ def main():
             return
         age = user['age']
         max_hang = user['max_hang']
-        body_weight = float(input("Enter your body weight (in kg): "))
+        body_weight = float(input("Enter your current body weight (in kg): "))
+        added_weight = float(
+            input("Enter the weight you've added to your max hang (in kg): "))
+        max_hang += added_weight
 
     finger_strength = calculate_finger_strength(max_hang, body_weight)
     print(f"Your finger strength is {finger_strength}%")
 
     save_user_data(users, [first_name, last_name,
                    age, max_hang, finger_strength])
+
+    view_scores = input(
+        "Do you want to view your previous scores? (y/n) ").lower() == 'y'
+    if view_scores:
+        display_user_scores(users, first_name, last_name)
 
 
 if __name__ == '__main__':
