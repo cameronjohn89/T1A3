@@ -2,6 +2,23 @@
 The user will be prompted when running the application to input their details if they are a new user. Otherwise, if they are an existing user they will be retrieved from the users.csv file.
 The test will score the user based off of a percentage of their bodyweight.The user will be required to input their bodyweight as well as the added weight in any given testing session. The percentage score calculated from this. It calculates the score as - their total bodyweight = 100% and added weight would be in excess of this. For example if the user is 50kg and the add 50kgs and manage to successfully hang for 7secs they would score 200%.
 
+# How to use the application.
+To use the application the user must install the application to their computer. There is minimum requirements for the application to run - please see specifications below.
+Once installed the user can run the executable file to launch the application.
+When launched the application will ask the user if they are a new or exisiting user.
+Once the question is answered the user will prompted to input several pieces of information and will then be asked to perform the Max Hang test. 
+Once the test has been performed the application will ask the user to input their added weight - in this application the score is the users bodyweight + added weight.
+The application will then calculate the users score and show the results of the test as a percentage.
+The program will then end storing the data.
+
+# Specifications
+Specs for application are 
+Memory: 4GB RAM
+Graphics Card: AMD Raedon 470 (equivalent and up)
+CPU: Intel i5/AMD Ryzen 5 (equivalent and up)
+OS: Windows 10 or newer#
+
+
 # Github link to my repo is https://github.com/cameronjohn89/T1A3
 
 # Features - The features of my MaxHang application are to store data input from a user. Use that data to calculate a score used for testing and monitoring strength progression in climbers. And retrieve the data for climbers to see their previous scores
