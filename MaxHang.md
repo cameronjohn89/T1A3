@@ -4,4 +4,10 @@ The test will score the user based off of a percentage of their bodyweight.The u
 
 # Github link to my repo is https://github.com/cameronjohn89/T1A3
 
-# Features - The features of my MaxHang application are to store data input from a user. Use that data to calculate a score used for testing and monitoring strength progression in climbers. And retrieve the data for climbers to see their previous scores.
+# Features - The features of my MaxHang application are to store data input from a user. Use that data to calculate a score used for testing and monitoring strength progression in climbers. And retrieve the data for climbers to see their previous scores
+
+## Data Collection - collection of data will be from the user inputting all of said data. The application will request data from new and existing users in a step by step process from within the application. 
+
+## Data Storing/Retrieval - the application will have the ability to write and store the above data input by the user to a users.csv file. This will be where all the data is saved. When prompted by an exisitng user to retrieve this data the application will pull the data from the csv file and make it readable for the user.
+
+## Calculating Scores - The main function of the application is to calculate the max finger strength of the user (climbers) by getting them to perform a Max Hang test and to then input their data. The data that will be collected and used to calculate their score will be their bodyweight and the added weight they can hang from themselves.The application will measure the score as a percentage where the total bodyweight of the climber = 100%. For example if the climber was 50kg and they added 50kg for the test, they would score 200%. The calculation will be - finger strength = (bodyweight + added weigth) / bodyweight * 100.
