@@ -8,6 +8,7 @@ Once installed the user can run the executable file to launch the application.
 When launched the application will ask the user if they are a new or exisiting user.
 Once the question is answered the user will prompted to input several pieces of information and will then be asked to perform the Max Hang test. 
 Once the test has been performed the application will ask the user to input their added weight - in this application the score is the users bodyweight + added weight.
+Important note is that if you are an exisiting user, you will only be required to put any additional weight to your max hang test. If it is the same amount as previous testing put 0. If you previously did 50kgs and this time you did 55kgs. You would input 5kgs at this point.
 The application will then calculate the users score and show the results of the test as a percentage.
 The program will then end storing the data.
 
